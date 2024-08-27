@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +13,342 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.App{
+  font-family: Moderustic;
+}
+.logo-img {
+  width: 80px;
+  margin-right: 10px;
+}
+.Nav li a {
+  text-decoration: none;
+}
+.Nav li {
+  padding: 1rem;
+  font-size: 20px;
+}
+
+.Nav {
+  display: flex;
+  justify-content: space-between; /* This will push the logo to the left and the hamburger to the right */
+  align-items: center;
+  padding: 0 20px; /* Adjust padding as needed */
+}
+.nav-ul {
+  position: absolute; /* This makes the nav menu overlap the content when open */
+  top: 60px; /* Adjust based on your header height */
+  right: 20px; /* Align the nav menu to the right */
+  background-color: white; /* Adjust background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+  padding: 10px 20px;
+}
+.nav-ul ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.hamburger-menu {
+  padding: 10px; /* Adjust padding as needed */
+  background-color: red;
+}
+.hamburger-menu {
+  padding: 3px;
+  background-color: #a10202; /* Adjust background color as needed */
+  border-radius: 50%; /* Optional: makes the background circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow to the icon */
+}
+.hamburger-menu .hamburger-react {
+  color: white; /* Adjust the icon color to ensure contrast against the background */
+}
+.name-p {
+  font-size: 25px;
+  font-family: sora;
+}
+.Footer {
+   /* Use Flexbox */
+  color: white;
+  height: 100px;
+  background-color: #a10202;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-icons {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0; /* Remove default padding */
+  margin: 10px; /* Remove default margin */
+  display: flex; /* Align icons in a single line */
+  gap: 20px; /* Space between the icons */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.social-icons img {
+  width: 35px; /* Adjust the size of the icons */
+  height: auto;
+}
+.contact-us {
+  background-color: #2c3e50; /* Dark background color */
+  padding: 15px;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 80px;
+}
+
+.contact-link p {
+  color: #fff; /* White text color */
+  font-size: 1.5em; /* Increase font size */
+  font-weight: bold; /* Make the text bold */
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-link img {
+  margin-left: 10px;
+  height: 24px;
+  width: 24px;
+}
+
+.contact-us img {
+  width: 30px;
+}
+.contact-container {
+  text-align: center; /* Center content horizontally */
+  padding: 20px;
+}
+.contact-us a{
+  text-decoration: none;
+}
+.head img {
+  border-radius: 100%;
+}
+.head {
+  text-align: center; /* Center content horizontally */
+  color: black;
+  padding: 50px;
+  font-size: 20px;
+}
+
+.jobs-img {
+  height: 550px; 
+}
+.jobs-card {
+  display: flex;
+  justify-content: center; /* Horizontally center the image */
+  align-items: center; /* Vertically center the image */
+  height: 450px; /* Ensure the container has a fixed height */
+  text-align: center; /* Center the text below the image */
+  padding: 10px; /* Add padding if needed */
+  box-sizing: border-box;
+  margin: 0; /* Remove any default margin */
+}
+
+.jobs-img {
+  max-height: 100%; /* Ensure the image scales within the container */
+  max-width: 100%; /* Ensure the image scales within the container */
+  object-fit: contain; /* Ensure the image maintains its aspect ratio */
+  margin-left:10px; /* Remove any default margin */
+  border-radius: 20px;
+}
+.jobs-card-outer {
+  white-space: nowrap; /* Prevents the items from wrapping to the next line */
+  width: 80%;
+  margin: auto;
+}
+.outer-mission {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row; /* Aligns items horizontally */
+  gap: 20px; /* Adds space between the text and image */
+}
+
+.mission {
+  flex: 1; /* Allows the paragraph to take up available space */
+  margin: 0;
+}
+.WhyChooseUs{
+  width: 90%;
+  margin: auto;
+}
+.WhyChooseUs h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.outer-mission img {
+  max-width: 400px;
+  height: auto;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .outer-mission {
+      flex-direction: column; /* Stacks items vertically */
+      text-align: center; /* Center-aligns text on smaller screens */
+  }
+
+  .outer-mission img {
+      max-width: 100%;
+  }
+}
+.reviews {
+  padding: 20px;
+}
+
+.reviews h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.jobs h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.inner-review .name {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.review-text {
+  margin: 30px;
+}
+.inner-review {
+  background-color: #a10202;
+  color: white;
+  border-radius: 20px;
+  height: 200px;
+}
+@media (max-width: 768px) {
+  .inner-review {
+    background-color: #a10202;
+    color: white;
+    border-radius: 20px;
+    height: 350px;
+  }
+}
+@media (max-width: 1024px) {
+  .inner-review {
+    background-color: #a10202;
+    color: white;
+    border-radius: 20px;
+    height: 300px;
+  }
+}
+.review-text1 {
+  margin-right: 20px;
+}
+.what-we-offer {
+  padding: 20px;
+}
+
+.offers-website, .offers-seo {
+  display: flex;
+  align-items: flex-start; /* Aligns items to the start of the flex container */
+  margin-bottom: 20px;
+  align-content: center;
+}
+
+.offers-website img, .offers-seo img {
+  width: 500px;
+  margin-right: 20px;
+  height: auto;
+}
+
+.offers-website div, .offers-seo div {
+  display: flex;
+  flex-direction: column;
+}
+
+.offers-website p, .offers-seo p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .offers-website, .offers-seo {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .offers-website img, .offers-seo img {
+      margin-right: 0;
+      margin-bottom: 10px;
+      width: 250px;
+  }
+}
+.what-we-offer h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.head img {
+  width: 200px;
+}
+.what-are-you {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+}
+@media (max-width: 768px) {
+  .what-are-you {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+  }
+}
+.about {
+  width: 95%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.submit-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #555;
 }
