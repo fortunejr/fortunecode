@@ -12,7 +12,7 @@ const Offers = () => {
             </div>
         </div>
         <div className='offers-seo'>
-            <div>
+            <div className='seo-text'>
                 <h4>SEO Implementation:</h4>
                 <p>Our SEO implementation services at Fortune Code are designed to increase your website's visibility and rank higher in search engine results. From keyword research to on-page optimization and performance tracking, we ensure that your website not only reaches its target audience but also stays ahead of the competition.</p>
             </div>

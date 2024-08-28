@@ -230,7 +230,7 @@ code {
     background-color: #a10202;
     color: white;
     border-radius: 20px;
-    height: 350px;
+    height: 380px;
   }
 }
 @media (max-width: 1024px) {
@@ -238,12 +238,10 @@ code {
     background-color: #a10202;
     color: white;
     border-radius: 20px;
-    height: 300px;
+    height: 325px;
   }
 }
-.review-text1 {
-  margin-right: 20px;
-}
+
 .what-we-offer {
   padding: 20px;
 }
@@ -277,12 +275,21 @@ code {
       justify-content: center;
       align-items: center;
   }
-
+  .seo-text {
+    padding-top: 10px;
+  }
   .offers-website img, .offers-seo img {
       margin-right: 0;
       margin-bottom: 10px;
       width: 250px;
   }
+  
+}
+.offers-website {
+  margin-bottom: 80px;
+}
+.seo-text {
+  padding-top: 30px;
 }
 .what-we-offer h2 {
   text-align: center;
@@ -351,4 +358,17 @@ input, textarea {
 
 .submit-button:hover {
   background-color: #555;
+}
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  outline: none
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+
+  -webkit-tap-highlight-color: transparent;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
