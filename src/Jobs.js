@@ -16,6 +16,10 @@ const Jobs = ({ deviceType }) => {
         {
             img: '/images/lebole.png',
             text: 'Orphanage home website'
+        },
+        {
+            img: '/images/okane.png',
+            text: 'Investment website'
         }
     ];
     const settings = {
